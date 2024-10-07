@@ -1,0 +1,13 @@
+
+name: Majed
+
+on:
+  push:
+    branches: [ '*' ]
+
+
+
+jobs:
+  job1:
+    env:
+      FIRST_NAME: Majed
