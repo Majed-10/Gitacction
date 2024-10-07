@@ -1,27 +1,27 @@
-#A workflow that writes the branch name on push
+# #A workflow that writes the branch name on push
 
-name: Majed
+# name: Majed
 
-on:
-  push:
-    branches: [ '*' ]
+# on:
+#   push:
+#     branches: [ '*' ]
 
-jobs:
-  log-branch-name:
-    runs-on: ubuntu-latest
+# jobs:
+#   log-branch-name:
+#     runs-on: ubuntu-latest
 
-    steps:
-      # Step 1: Checkout the code
-      - uses: actions/checkout@v2
+#     steps:
+#       # Step 1: Checkout the code
+#       - uses: actions/checkout@v2
 
-      # Step 2: Log branch name
-      - name: Get and log branch name
-        run: |
-          echo "Hello my frist: $GITHUB_REF"
+#       # Step 2: Log branch name
+#       - name: Get and log branch name
+#         run: |
+#           echo "Hello my frist: $GITHUB_REF"
 
-      # Step 3: Upload the file (optional)
-      - name: Upload branch name file
-        uses: actions/upload-artifact@v3
-        with:
-          name: Majed
-          path: file.json
+#       # Step 3: Upload the file (optional)
+#       - name: Upload branch name file
+#         uses: actions/upload-artifact@v3
+#         with:
+#           name: Majed
+#           path: file.json
